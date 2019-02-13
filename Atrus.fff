@@ -1,29 +1,29 @@
 <?xml version="1.0"?>
-<profile name="Atrus" version="2019-02-12 16:55:16" app="S3D-Software 4.0.1">
+<profile name="Atrus" version="2019-02-12 17:11:29" app="S3D-Software 4.1.1">
   <baseProfile>Rostock MAX v2</baseProfile>
-  <printMaterial>PLA / Hatchbox / Black</printMaterial>
+  <printMaterial>Volcano (0.8) / PLA / Solutech / Clear</printMaterial>
   <printQuality>High</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Primary Extruder">
     <toolheadNumber>0</toolheadNumber>
-    <diameter>0.5</diameter>
+    <diameter>0.8</diameter>
     <autoWidth>1</autoWidth>
-    <width>0.6</width>
-    <extrusionMultiplier>0.99</extrusionMultiplier>
+    <width>0.96</width>
+    <extrusionMultiplier>1</extrusionMultiplier>
     <useRetract>1</useRetract>
     <retractionDistance>5</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
     <retractionZLift>1</retractionZLift>
     <retractionSpeed>3600</retractionSpeed>
-    <useCoasting>1</useCoasting>
+    <useCoasting>0</useCoasting>
     <coastingDistance>0.5</coastingDistance>
     <useWipe>0</useWipe>
-    <wipeDistance>5</wipeDistance>
+    <wipeDistance>0.5</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
-  <layerHeight>0.15</layerHeight>
-  <topSolidLayers>4</topSolidLayers>
-  <bottomSolidLayers>4</bottomSolidLayers>
+  <layerHeight>0.3</layerHeight>
+  <topSolidLayers>2</topSolidLayers>
+  <bottomSolidLayers>2</bottomSolidLayers>
   <perimeterOutlines>2</perimeterOutlines>
   <printPerimetersInsideOut>1</printPerimetersInsideOut>
   <startPointOption>3</startPointOption>
@@ -70,7 +70,7 @@
   <internalInfillAngles>45,-45</internalInfillAngles>
   <overlapInternalInfillAngles>0</overlapInternalInfillAngles>
   <externalInfillAngles>45,-45</externalInfillAngles>
-  <generateSupport>1</generateSupport>
+  <generateSupport>0</generateSupport>
   <supportExtruder>0</supportExtruder>
   <supportInfillPercentage>40</supportInfillPercentage>
   <supportExtraInflation>0</supportExtraInflation>
@@ -89,16 +89,12 @@
   <temperatureController name="Primary Extruder">
     <temperatureNumber>0</temperatureNumber>
     <isHeatedBed>0</isHeatedBed>
-    <relayBetweenLayers>0</relayBetweenLayers>
-    <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="180"/>
+    <setpoint layer="1" temperature="190"/>
   </temperatureController>
   <temperatureController name="Heated Bed">
     <temperatureNumber>1</temperatureNumber>
     <isHeatedBed>1</isHeatedBed>
-    <relayBetweenLayers>0</relayBetweenLayers>
-    <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
     <setpoint layer="1" temperature="50"/>
   </temperatureController>
@@ -155,7 +151,7 @@
   <celebration>0</celebration>
   <celebrationSong>Random Song</celebrationSong>
   <postProcessing></postProcessing>
-  <defaultSpeed>2700</defaultSpeed>
+  <defaultSpeed>1500</defaultSpeed>
   <outlineUnderspeed>1</outlineUnderspeed>
   <solidInfillUnderspeed>0.8</solidInfillUnderspeed>
   <supportUnderspeed>0.8</supportUnderspeed>
@@ -215,17 +211,17 @@
     <supportInfillPercentage>30</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureQuality name="High">
-    <layerHeight>0.15</layerHeight>
-    <topSolidLayers>4</topSolidLayers>
-    <bottomSolidLayers>4</bottomSolidLayers>
+    <layerHeight>0.3</layerHeight>
+    <topSolidLayers>2</topSolidLayers>
+    <bottomSolidLayers>2</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
     <infillPercentage>30</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureMaterial name="PLA / Hatchbox / Black">
-    <globalExtruderTemperature>180</globalExtruderTemperature>
+    <globalExtruderTemperature>190</globalExtruderTemperature>
     <globalBedTemperature>50</globalBedTemperature>
-    <globalExtrusionMultiplier>0.99</globalExtrusionMultiplier>
+    <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
       <setpoint layer="2" speed="90"/>
@@ -241,6 +237,15 @@
   </autoConfigureQuality>
   <autoConfigureMaterial name="PLA / James / Blue">
     <globalExtruderTemperature>180</globalExtruderTemperature>
+    <globalBedTemperature>50</globalBedTemperature>
+    <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+      <setpoint layer="2" speed="90"/>
+    </fanSpeed>
+  </autoConfigureMaterial>
+  <autoConfigureMaterial name="Volcano (0.8) / PLA / Solutech / Clear">
+    <globalExtruderTemperature>190</globalExtruderTemperature>
     <globalBedTemperature>50</globalBedTemperature>
     <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
     <fanSpeed>
