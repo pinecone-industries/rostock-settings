@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="Atrus" version="2019-02-12 17:11:29" app="S3D-Software 4.1.1">
+<profile name="Atrus" version="2019-02-12 21:09:00" app="S3D-Software 4.1.1">
   <baseProfile>Rostock MAX v2</baseProfile>
   <printMaterial>Volcano (0.8) / PLA / Solutech / Clear</printMaterial>
   <printQuality>High</printQuality>
@@ -14,14 +14,14 @@
     <retractionDistance>5</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
     <retractionZLift>1</retractionZLift>
-    <retractionSpeed>3600</retractionSpeed>
+    <retractionSpeed>1500</retractionSpeed>
     <useCoasting>0</useCoasting>
     <coastingDistance>0.5</coastingDistance>
-    <useWipe>0</useWipe>
+    <useWipe>1</useWipe>
     <wipeDistance>0.5</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
-  <layerHeight>0.3</layerHeight>
+  <layerHeight>0.6</layerHeight>
   <topSolidLayers>2</topSolidLayers>
   <bottomSolidLayers>2</bottomSolidLayers>
   <perimeterOutlines>2</perimeterOutlines>
@@ -31,9 +31,9 @@
   <startPointOriginY>-30</startPointOriginY>
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
-  <firstLayerHeightPercentage>70</firstLayerHeightPercentage>
-  <firstLayerWidthPercentage>150</firstLayerWidthPercentage>
-  <firstLayerUnderspeed>0.3</firstLayerUnderspeed>
+  <firstLayerHeightPercentage>50</firstLayerHeightPercentage>
+  <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
+  <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
   <raftTopLayers>2</raftTopLayers>
@@ -90,17 +90,17 @@
     <temperatureNumber>0</temperatureNumber>
     <isHeatedBed>0</isHeatedBed>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="190"/>
+    <setpoint layer="1" temperature="180"/>
   </temperatureController>
   <temperatureController name="Heated Bed">
     <temperatureNumber>1</temperatureNumber>
     <isHeatedBed>1</isHeatedBed>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="50"/>
+    <setpoint layer="1" temperature="75"/>
   </temperatureController>
   <fanSpeed>
     <setpoint layer="1" speed="0"/>
-    <setpoint layer="2" speed="90"/>
+    <setpoint layer="2" speed="100"/>
   </fanSpeed>
   <blipFanToFullPower>1</blipFanToFullPower>
   <adjustSpeedForCooling>0</adjustSpeedForCooling>
@@ -151,7 +151,7 @@
   <celebration>0</celebration>
   <celebrationSong>Random Song</celebrationSong>
   <postProcessing></postProcessing>
-  <defaultSpeed>1500</defaultSpeed>
+  <defaultSpeed>1000</defaultSpeed>
   <outlineUnderspeed>1</outlineUnderspeed>
   <solidInfillUnderspeed>0.8</solidInfillUnderspeed>
   <supportUnderspeed>0.8</supportUnderspeed>
@@ -190,7 +190,7 @@
   <internalThinWallType>1</internalThinWallType>
   <thinWallAllowedOverlapPercentage>50</thinWallAllowedOverlapPercentage>
   <singleExtrusionMinLength>0.2</singleExtrusionMinLength>
-  <singleExtrusionMinPrintingWidthPercentage>25</singleExtrusionMinPrintingWidthPercentage>
+  <singleExtrusionMinPrintingWidthPercentage>100</singleExtrusionMinPrintingWidthPercentage>
   <singleExtrusionMaxPrintingWidthPercentage>200</singleExtrusionMaxPrintingWidthPercentage>
   <singleExtrusionEndpointExtension>0.2</singleExtrusionEndpointExtension>
   <horizontalSizeCompensation>0</horizontalSizeCompensation>
@@ -211,7 +211,7 @@
     <supportInfillPercentage>30</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureQuality name="High">
-    <layerHeight>0.3</layerHeight>
+    <layerHeight>0.6</layerHeight>
     <topSolidLayers>2</topSolidLayers>
     <bottomSolidLayers>2</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
@@ -245,12 +245,12 @@
     </fanSpeed>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="Volcano (0.8) / PLA / Solutech / Clear">
-    <globalExtruderTemperature>190</globalExtruderTemperature>
-    <globalBedTemperature>50</globalBedTemperature>
+    <globalExtruderTemperature>180</globalExtruderTemperature>
+    <globalBedTemperature>75</globalBedTemperature>
     <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="90"/>
+      <setpoint layer="2" speed="100"/>
     </fanSpeed>
   </autoConfigureMaterial>
 </profile>
