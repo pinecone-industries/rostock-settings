@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="Atrus" version="2019-02-12 21:09:00" app="S3D-Software 4.1.1">
+<profile name="Atrus" version="2019-02-14 16:22:02" app="S3D-Software 4.1.1">
   <baseProfile>Rostock MAX v2</baseProfile>
   <printMaterial>Volcano (0.8) / PLA / Solutech / Clear</printMaterial>
   <printQuality>High</printQuality>
@@ -18,7 +18,7 @@
     <useCoasting>0</useCoasting>
     <coastingDistance>0.5</coastingDistance>
     <useWipe>1</useWipe>
-    <wipeDistance>0.5</wipeDistance>
+    <wipeDistance>1</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
   <layerHeight>0.6</layerHeight>
@@ -31,7 +31,7 @@
   <startPointOriginY>-30</startPointOriginY>
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
-  <firstLayerHeightPercentage>50</firstLayerHeightPercentage>
+  <firstLayerHeightPercentage>70</firstLayerHeightPercentage>
   <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
   <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
   <useRaft>0</useRaft>
@@ -96,11 +96,10 @@
     <temperatureNumber>1</temperatureNumber>
     <isHeatedBed>1</isHeatedBed>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="75"/>
+    <setpoint layer="1" temperature="60"/>
   </temperatureController>
   <fanSpeed>
     <setpoint layer="1" speed="0"/>
-    <setpoint layer="2" speed="100"/>
   </fanSpeed>
   <blipFanToFullPower>1</blipFanToFullPower>
   <adjustSpeedForCooling>0</adjustSpeedForCooling>
@@ -142,7 +141,7 @@
   <baudRateOverride>250000</baudRateOverride>
   <overridePrinterModels>1</overridePrinterModels>
   <printerModelsOverride></printerModelsOverride>
-  <startingGcode>G28 ; home all axes</startingGcode>
+  <startingGcode>M301 S0 P64.6705 I4.5463 D229.9844 X255.0000 Y255 ; VOLCANO SHIT,,G28 ; home all axes</startingGcode>
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
   <toolChangeGcode></toolChangeGcode>
@@ -246,11 +245,10 @@
   </autoConfigureMaterial>
   <autoConfigureMaterial name="Volcano (0.8) / PLA / Solutech / Clear">
     <globalExtruderTemperature>180</globalExtruderTemperature>
-    <globalBedTemperature>75</globalBedTemperature>
+    <globalBedTemperature>60</globalBedTemperature>
     <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="100"/>
     </fanSpeed>
   </autoConfigureMaterial>
 </profile>
