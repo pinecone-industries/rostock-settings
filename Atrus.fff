@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="Atrus" version="2019-02-14 16:22:02" app="S3D-Software 4.1.1">
+<profile name="Atrus" version="2019-02-19 16:17:55" app="S3D-Software 4.1.1">
   <baseProfile>Rostock MAX v2</baseProfile>
   <printMaterial>Volcano (0.8) / PLA / Solutech / Clear</printMaterial>
   <printQuality>High</printQuality>
@@ -18,7 +18,7 @@
     <useCoasting>0</useCoasting>
     <coastingDistance>0.5</coastingDistance>
     <useWipe>1</useWipe>
-    <wipeDistance>1</wipeDistance>
+    <wipeDistance>0.5</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
   <layerHeight>0.6</layerHeight>
@@ -26,10 +26,10 @@
   <bottomSolidLayers>2</bottomSolidLayers>
   <perimeterOutlines>2</perimeterOutlines>
   <printPerimetersInsideOut>1</printPerimetersInsideOut>
-  <startPointOption>3</startPointOption>
+  <startPointOption>2</startPointOption>
   <startPointOriginX>0</startPointOriginX>
   <startPointOriginY>-30</startPointOriginY>
-  <sequentialIslands>0</sequentialIslands>
+  <sequentialIslands>1</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
   <firstLayerHeightPercentage>70</firstLayerHeightPercentage>
   <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
@@ -111,7 +111,7 @@
   <increaseFanForBridging>0</increaseFanForBridging>
   <bridgingFanSpeed>100</bridgingFanSpeed>
   <use5D>1</use5D>
-  <relativeEdistances>0</relativeEdistances>
+  <relativeEdistances>1</relativeEdistances>
   <allowEaxisZeroing>1</allowEaxisZeroing>
   <independentExtruderAxes>0</independentExtruderAxes>
   <includeM10123>0</includeM10123>
@@ -141,7 +141,7 @@
   <baudRateOverride>250000</baudRateOverride>
   <overridePrinterModels>1</overridePrinterModels>
   <printerModelsOverride></printerModelsOverride>
-  <startingGcode>M301 S0 P64.6705 I4.5463 D229.9844 X255.0000 Y255 ; VOLCANO SHIT,,G28 ; home all axes</startingGcode>
+  <startingGcode>; Set PIDs for Volcano,M301 S0 P64.6705 I4.5463 D229.9844 X255 Y255,,; Home all axes,G28 </startingGcode>
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
   <toolChangeGcode></toolChangeGcode>
@@ -176,9 +176,9 @@
   <mergeAllIntoSolid>0</mergeAllIntoSolid>
   <onlyRetractWhenCrossingOutline>1</onlyRetractWhenCrossingOutline>
   <retractBetweenLayers>1</retractBetweenLayers>
-  <useRetractionMinTravel>0</useRetractionMinTravel>
+  <useRetractionMinTravel>1</useRetractionMinTravel>
   <retractionMinTravel>3</retractionMinTravel>
-  <retractWhileWiping>0</retractWhileWiping>
+  <retractWhileWiping>1</retractWhileWiping>
   <onlyWipeOutlines>1</onlyWipeOutlines>
   <avoidCrossingOutline>0</avoidCrossingOutline>
   <maxMovementDetourFactor>3</maxMovementDetourFactor>
